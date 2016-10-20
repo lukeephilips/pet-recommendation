@@ -1,0 +1,6 @@
+.well {
+  width: 40%;
+}
+.turtle, .crocodile, .dog, .cheetah {
+  display: none;
+}

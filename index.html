@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pet Recommendation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="well formInput">
+        <div class="form-group petName">
+          <label for="petName">What would you like to name your pet?</label>
+          <input class="form-control "type="text" id="petName">
+        </div>
+        <form>
+          <div class="form-group activeLevel">
+            <label for="activeLevel">What's your ideal Saturday?</label>
+            <select class="form-control" id="activeLevel">
+              <option value="low">Sit on the couch</option>
+              <option value="high">Go for a run</option>
+
+            </select>
+          </div>
+
+          <div class="form-group dangerLevel">
+            <label for="dangerLevel">How does some dangerous fun sound?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="dangerLevel" value="low" checked>
+                Don't scare me like that
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="dangerLevel" value="high">
+                Bring it on!
+              </label>
+            </div>
+            </div>
+            <button type="submit" class="btn btn-default">Hit me!</button>
+          </form>
+        </div><!-- formInput Div-->
+
+<!-- Output pages -->
+      <div class="turtle output well"> <!--activeLevel = low, danger = low -->
+        <p>
+          It's a turtle named <span class="petName"></span>!
+        </p>
+      </div>
+      <div class="crocodile well"> <!--activeLevel = low, danger = high -->
+        <p>
+          It's a crocodile named <span class="petName"></span>!
+        </p>
+      </div>
+      <div class="dog well"> <!--activeLevel = high, danger = low -->
+        <p>
+          It's a dog named <span class="petName"></span>!
+        </p>
+      </div>
+      <div class="cheetah well"> <!--activeLevel = high, danger = high -->
+        <p>
+          It's a cheetah named <span class="petName"></span>!
+        </p>
+      </div>
+    </div><!-- container -->
+  </body>
+</html>
